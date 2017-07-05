@@ -17,3 +17,6 @@ A simplified pipeline for ctDNA sequencing data analysis
 
 # get data for testing
 A small Illumina pair-end sequencing data (R1.fq.gz and R2.fq.gz) can be downloaded from http://opengene.org/dataset.html
+
+# test the pipeline
+modify `pipeline.sh` according to your local settings, run it.
