@@ -14,3 +14,6 @@ A simplified pipeline for ctDNA sequencing data analysis
 # prepare the reference data and databases
 * hg19: http://hgdownload.cse.ucsc.edu/downloads.html
 * Annovar: http://annovar.openbioinformatics.org/en/latest/user-guide/startup/
+
+# get data for testing
+A small Illumina pair-end sequencing data (R1.fq.gz and R2.fq.gz) can be downloaded from http://opengene.org/dataset.html
