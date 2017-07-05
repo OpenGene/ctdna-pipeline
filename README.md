@@ -13,3 +13,4 @@ A simplified pipeline for ctDNA sequencing data analysis
 
 # prepare the reference data and databases
 * hg19: http://hgdownload.cse.ucsc.edu/downloads.html
+* Annovar: http://annovar.openbioinformatics.org/en/latest/user-guide/startup/
