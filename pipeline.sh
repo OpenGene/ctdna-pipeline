@@ -39,4 +39,4 @@ perl Filter.pl outdir/Test.snp_MrBam.txt outdir/Test.snp_MrBam.filter 2 0.3
 perl Filter.pl outdir/Test.indel_MrBam.txt outdir/Test.indel_MrBam.filter 2 0.3
 
 # check for important drugable mutations by MutScan
-mutscan -1 data/Test_R1.fq -2 data/Test_R2.fq -h outdir/Test_mutscan.html
+mutscan -1 path/to/data/R1.fq.gz -2 path/to/data/R2.fq.gz -h outdir/Test_mutscan.html
