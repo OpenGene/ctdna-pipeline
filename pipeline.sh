@@ -1,7 +1,7 @@
 # replace path/to/XXX with your correct paths
 
-# read filtering to get good reads with AfterQC
-python AfterQC/after.py --no_correction -1 path/to/data/R1.fq.gz -2 path/to/data/R2.fq.gz -g outdir/ -b outdir/ -r outdir/
+# read filtering to get good reads with AfterQC (if you have installed pypy, replace python with pypy)
+python AfterQC/after.py -1 path/to/data/R1.fq.gz -2 path/to/data/R2.fq.gz -g outdir/ -b outdir/ -r outdir/
 
 # alignment
 bwa mem -k 32 -t 10 -M hg19.fa outdir/R1.good.fq outdir/R2.good.fq > outdir/test.sam
