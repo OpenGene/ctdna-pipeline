@@ -40,4 +40,11 @@ perl Filter.pl outdir/test.snp_MrBam.txt outdir/test.snp_MrBam.filter 2 0.3
 perl Filter.pl outdir/test.indel_MrBam.txt outdir/test.indel_MrBam.filter 2 0.3
 
 # check for important drugable mutations by MutScan
-mutscan -1 path/to/data/R1.fq.gz -2 path/to/data/R2.fq.gz -h outdir/test_mutscan.html
+MutScan/mutscan -1 path/to/data/R1.fq.gz -2 path/to/data/R2.fq.gz -h outdir/test_mutscan.html
+
+# check for important drugable mutations by GeneFuse
+GeneFuse/genefuse -1 path/to/data/R1.fq.gz -2 path/to/data/R2.fq.gz -r hg19.fa -f GeneFuse/genes/cancer.hg19.csv -h outdir/test_genefuse.html
+
+python3 -m MrBam.main -o outdir/test.snp_MrBam.txt -m 3 -q 25 --fast --cfdna outdir/test.dedup.bam --skip 1 outdir/test.snp.hg19_multianno.txt 
+python3 -m MrBam.main -o outdir/test.snp_MrBam.txt -m 3 -q 25 --fast --cfdna outdir/test.dedup.bam --skip 1 outdir/test.snp.hg19_multianno.txtc
+python3 -m MrBam.main -o outdir/test.snp_MrBam.txt -m 3 -q 25 --fast --cfdna outdir/test.dedup.bam --skip 1 outdir/test.snp.hg19_multianno.txt
