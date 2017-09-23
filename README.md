@@ -8,6 +8,7 @@ A simplified pipeline for ctDNA sequencing data analysis
 * Annovar: http://annovar.openbioinformatics.org/en/latest/user-guide/download/
 * AfterQC: https://github.com/OpenGene/AfterQC
 * MutScan: https://github.com/OpenGene/MutScan
+* GeneFuse: https://github.com/OpenGene/GeneFuse
 * dedup.py: https://github.com/OpenGene/dedup
 * MrBam: https://github.com/OpenGene/MrBam
 
